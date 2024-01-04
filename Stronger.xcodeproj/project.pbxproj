@@ -44,6 +44,7 @@
 		F76A52FD2B46DE0D003163CD /* StrongerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrongerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76A53012B46DE0D003163CD /* StrongerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongerUITests.swift; sourceTree = "<group>"; };
 		F76A53032B46DE0D003163CD /* StrongerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F76A53142B46E17A003163CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		F76A52DA2B46DE0C003163CD = {
 			isa = PBXGroup;
 			children = (
+				F76A53142B46E17A003163CD /* README.md */,
 				F76A52E52B46DE0C003163CD /* Stronger */,
 				F76A52F62B46DE0D003163CD /* StrongerTests */,
 				F76A53002B46DE0D003163CD /* StrongerUITests */,
@@ -94,6 +96,10 @@
 		F76A52E52B46DE0C003163CD /* Stronger */ = {
 			isa = PBXGroup;
 			children = (
+				F76A53132B46E07F003163CD /* Extensions */,
+				F76A53122B46E071003163CD /* Utils */,
+				F76A53112B46E025003163CD /* Onboarding */,
+				F76A53102B46E016003163CD /* Main */,
 				F76A52E62B46DE0C003163CD /* StrongerApp.swift */,
 				F76A52E82B46DE0C003163CD /* ContentView.swift */,
 				F76A52EA2B46DE0D003163CD /* Assets.xcassets */,
@@ -125,6 +131,34 @@
 				F76A53032B46DE0D003163CD /* StrongerUITestsLaunchTests.swift */,
 			);
 			path = StrongerUITests;
+			sourceTree = "<group>";
+		};
+		F76A53102B46E016003163CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F76A53112B46E025003163CD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F76A53122B46E071003163CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F76A53132B46E07F003163CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,9 +456,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Stronger/Preview Content\"";
-				DEVELOPMENT_TEAM = 9C8ML2X94H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Stronger-Debug";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,11 +470,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fitness.Stronger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitness.Stronger.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,6 +492,7 @@
 				DEVELOPMENT_TEAM = 9C8ML2X94H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Stronger;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,11 +503,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fitness.Stronger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fitness.Stronger.release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
